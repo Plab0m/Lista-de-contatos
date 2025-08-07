@@ -8,21 +8,26 @@ const ContactList = [
 ];
 
 const BtnPesq = document.getElementById("searchButton");
+
 BtnPesq.addEventListener("click", function () {
-  const input = document.getElementById("searchInput").value.trim().toLowerCase();
+  const input = document
+    .getElementById("searchInput")
+    .value.trim()
+    .toLowerCase();
   const spanPesq = document.getElementById("spanPesq");
   const ResultPesq = document.getElementById("resultadoPesquisa");
   const visibilityResult = document.getElementById("containerInputsResult");
-  for (let i = 0; i < ContactList.length; i++) {
-    if (ContactList[i].name.trim().toLowerCase() == input) {
-      spanPesq.innerHTML = "Contatos Encontrados:";
-      visibilityResult.style.visibility = "visible";
-      ResultPesq.innerHTML = ContactList[i].name + " - " + ContactList[i].phone;
+
+  for (const contact of ContactList) {
+    if (contact.name.toLowerCase().trim() === input) {
+      spanPesq.innerHTML = "Contato Encontrado:";
+      ResultPesq.innerHTML = `${contact.name} - ${contact.phone}`;
       break;
     } else {
-      visibilityResult.style.visibility = "visible";
       spanPesq.innerHTML = "Nenhum Contato Encontrado.";
       ResultPesq.innerHTML = "";
     }
   }
+
+  visibilityResult.style.visibility = "visible";
 });

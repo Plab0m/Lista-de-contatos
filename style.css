@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+}
+
+img {
+  width: 10%;
+  height: auto;
+}
+h1{
+    font-weight: 700;
+
+}
+.ContainerMain {
+  padding: 10em;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.containerInputs {
+  width: 40%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5em;
+}
+input {
+  width: 60%;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 16px;
+}
+button {
+  width: 50%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1b1d1f;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+#containerInputsResult {
+  visibility: hidden;
+  width: 30%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#spanPesq {
+  width: 65%;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+#resultadoPesquisa {
+  font-size: 16px;
+}

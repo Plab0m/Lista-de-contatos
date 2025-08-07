@@ -10,12 +10,13 @@ body {
 }
 
 img {
-  width: 10%;
-  height: auto;
+width: 20em;
+min-width: 10em;
 }
-h1{
-    font-weight: 700;
-
+h1 {
+  font-weight: 700;
+  text-align: center;
+  min-width: 500px;
 }
 .ContainerMain {
   padding: 10em;
@@ -38,6 +39,7 @@ h1{
 }
 input {
   width: 60%;
+  min-width: 250px;
   height: 40px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -46,6 +48,7 @@ input {
 }
 button {
   width: 50%;
+  min-width: 200px;
   height: 40px;
   border: none;
   border-radius: 5px;
@@ -72,6 +75,10 @@ button {
   display: flex;
   justify-content: center;
 }
+#digName{
+    text-align: center;
+}
 #resultadoPesquisa {
   font-size: 16px;
 }
+

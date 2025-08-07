@@ -19,8 +19,7 @@ BtnPesq.addEventListener("click", function () {
       visibilityResult.style.visibility = "visible";
       ResultPesq.innerHTML = ContactList[i].name + " - " + ContactList[i].phone;
       break;
-    }
-    if ((i == ContactList.length)) {
+    } else {
       visibilityResult.style.visibility = "visible";
       spanPesq.innerHTML = "Nenhum Contato Encontrado.";
       ResultPesq.innerHTML = "";
